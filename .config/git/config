@@ -1,5 +1,5 @@
 [include]
-    path = ~/.gitconfig_local
+    path = ~/.config/git/gitconfig_local
 
 [core]
     editor = nvim

@@ -1,0 +1,9 @@
+[tools]
+java = "lts"
+rust = "latest"
+uv = "latest"
+node = "lts"
+go = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["python"]

@@ -1,0 +1,102 @@
+# vim: ft=conf
+
+#    brew bundle install --cleanup --file=~/.config/Brewfile
+#
+# https://matthiasportzel.com/brewfile/
+# 
+
+# Initial feed from existing system:
+# history -10000 | rg -o  'brew 'install .*' | sort'
+
+# Moreutils provides, for example, vipe
+#brew ''moreutils''
+
+# macOS ships with a slightly out-of-date `less`
+brew 'less'
+
+# jq, a command line JSON editor
+brew 'jq'
+
+cask 'mos'
+#xattr -d com.apple.quarantine /Applications/Mos.app
+# Then launch and untick ReveScroll ; set Launch on Login, Hide status bar icon
+
+# Hide Menubar icons
+cask 'jordanbaird-ice'
+# then open it to grant permissions & always show Teams, VPN, bluetooth ; hide spotlight
+
+# Window switcher on Alt-Tab instead of Command-Tab
+# https://alt-tab-macos.netlify.app/
+cask 'alt-tab'
+# then open to grant permissions & set options:
+# * General: Start at login, no Menubar icon
+# * Appearance: AppIcons, Style: Preview selected window
+
+# Automation, scripting, shortcuts for window switcher
+cask 'hammerspoon'
+
+# Window snapping
+cask 'rectangle'
+
+# Move & Resize from anywhere
+cask 'easy-move-plus-resize'
+#xattr -d com.apple.quarantine /Applications/Easy\ Move+Resize.app
+
+
+# brew 'install maccy'
+
+# Quicksilver is a Stoplight replacement, on Command-space, and also helps with global shortcuts
+#cask 'quicksilver'
+
+
+brew 'bat'
+brew 'exiftool'
+brew 'eza'
+brew 'fzf'
+brew 'gh'
+brew 'git'
+brew 'imagemagick'
+brew 'ipython'
+brew 'jupyterlab'
+brew 'mise'
+brew 'neovim' # Editor
+brew 'nushell'
+brew 'ripgrep'
+brew 'wimlib'
+brew 'yt-dlp'
+brew 'z'
+brew 'zoxide'
+
+cask 'anytype' # Notes
+cask 'betterdisplay'
+cask 'deskpad' 
+cask 'easy-move+resize'
+cask 'font-fira-code'
+cask 'gdisk'
+cask 'ghostty' # Terminal
+cask 'git-credential-manager'
+cask 'gpxsee'
+cask 'kate'
+cask 'key-codes'
+cask 'lapce'
+cask 'logi-options+'
+cask 'maccy' # Clipboard manager - https://maccy.app/
+cask 'macvim-app'
+cask 'marta'
+cask 'nimble-commander'
+cask 'pixieditor'
+cask 'raycast'
+cask 'trex'
+cask 'ukelele' # Keyboard layout editor
+cask 'visual-studio-code'
+cask 'windsurf'
+
+vscode 'bierner.markdown-mermaid'
+vscode 'github.copilot'
+vscode 'ms-python.python'
+vscode 'ms-toolsai.jupyter'
+vscode 'vscodevim.vim'
+
+
+# incubating
+cask 'dyad' # AI powered app builder
