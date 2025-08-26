@@ -3,7 +3,7 @@
 #    brew bundle install --cleanup --file=~/.config/Brewfile
 #
 # https://matthiasportzel.com/brewfile/
-# 
+#
 
 # Initial feed from existing system:
 # history -10000 | rg -o  'brew 'install .*' | sort'
@@ -39,7 +39,7 @@ cask 'hammerspoon'
 cask 'rectangle'
 
 # Move & Resize from anywhere
-cask 'easy-move-plus-resize'
+# cask 'easy-move-plus-resize'
 #xattr -d com.apple.quarantine /Applications/Easy\ Move+Resize.app
 
 
@@ -69,7 +69,7 @@ brew 'zoxide'
 
 cask 'anytype' # Notes
 cask 'betterdisplay'
-cask 'deskpad' 
+cask 'deskpad'
 cask 'easy-move+resize'
 cask 'font-fira-code'
 cask 'gdisk'
@@ -91,12 +91,6 @@ cask 'ukelele' # Keyboard layout editor
 cask 'visual-studio-code'
 cask 'windsurf'
 
-vscode 'bierner.markdown-mermaid'
-vscode 'github.copilot'
-vscode 'ms-python.python'
-vscode 'ms-toolsai.jupyter'
-vscode 'vscodevim.vim'
-
-
 # incubating
 cask 'dyad' # AI powered app builder
+cask 'neovide-app'
