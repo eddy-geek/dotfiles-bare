@@ -17,4 +17,6 @@ def send_notification(percentage)
   `notify-send 'Battery Status' 'Battery Percentage: #{percentage}%'`
 end
 
-send_notification extract_battery_percentage get_battery_info
+get_battery_info
+  |> extract_battery_percentage
+  |> send_notification
