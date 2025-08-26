@@ -86,4 +86,4 @@ alias brewsync='brew bundle install --cleanup --file=~/.config/Brewfile'
 alias brewedit='vim ~/.config/Brewfile'
 
 alias dot='/usr/bin/git --git-dir="$HOME/code/GEEK/dotfiles-bare.git" --work-tree="$HOME"'
-alias dotsync='dot add -u && dot commit && dot pull --rebase && dot push'
+alias dotsync='dot add -u && dot commit -v && dot pull --rebase && dot push'
